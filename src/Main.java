@@ -16,15 +16,15 @@ public class Main {
         int N = Integer.parseInt(st.nextToken()); //토큰 분리해서 N입력
         int M = Integer.parseInt(st.nextToken()); //토큰 분리해서 N입력
 
-        arr = new int[M];  //M의 크기만큼 arr 동적할당()
-        visit = new boolean[N]; //N의 크기만큼 visit 동적할당
+        arr = new int[M];  //M의 크기만큼 arr배열생성
+        visit = new boolean[N]; //N의 크기만큼 visit배열생성
         dfs(N, M, 0);
         System.out.println(sb);
     }
 
     public static void dfs(int N, int M, int depth){
         if(depth == M){
-            for(int val : arr){
+            for(int val : arr){   //만약 depth가 
                 sb.append(val).append(' ');
             }
             sb.append('\n');
